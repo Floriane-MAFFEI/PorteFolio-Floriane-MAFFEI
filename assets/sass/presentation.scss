@@ -1,0 +1,113 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+// Keyframes de la partie presentation
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.4);
+    transform: translatey(-15px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+    transform: translatey(0px);
+  }
+}
+
+@keyframes clignote {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Style de la partie presentation
+
+.presentation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .avatar {
+    max-width: 170px;
+    height: auto;
+    box-sizing: border-box;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .content-presentation {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    text-align: center;
+    h1 {
+      font-size: 24px;
+      margin: 10px 0 0 0;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: lighter;
+      color: #242424;
+      span a :before {
+        font-size: 18px;
+        color: #cccccc;
+        text-decoration: none;
+        margin: 0 10px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: #ffffff;
+        }
+      }
+      i {
+        margin: 0 1rem;
+      }
+      &#text {
+        margin: 5rem;
+      }
+    }
+    #text {
+      font-size: 1rem;
+
+      span {
+        text-decoration: underline red 3px;
+      }
+
+      &:after {
+        content: "";
+        animation: clignote 0.5s infinite linear;
+        width: 2px;
+        height: 1rem;
+        display: inline-block;
+        background: #242424;
+      }
+    }
+  }
+}

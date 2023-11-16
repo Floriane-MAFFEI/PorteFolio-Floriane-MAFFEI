@@ -82,6 +82,9 @@ html {
 .presentation .content-presentation p i {
   margin: 0 1rem;
 }
+.presentation .content-presentation p#text {
+  margin: 5rem;
+}
 .presentation .content-presentation #text {
   font-size: 1rem;
 }
@@ -95,6 +98,114 @@ html {
   height: 1rem;
   display: inline-block;
   background: #242424;
+}
+
+.social-container {
+  position: relative;
+  top: 30px;
+  right: 51px;
+}
+
+.trapdoor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: #2867b2;
+  box-shadow: inset -7px 0px 12px -8px rgba(0, 0, 0, 0.3), inset 7px 0px 12px -8px rgba(0, 0, 0, 0.3);
+  transition: background 1.5s ease-in-out;
+}
+.trapdoor:hover {
+  background: #fff;
+}
+.trapdoor:hover .door {
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.4);
+  transform: scale(1.08);
+}
+.trapdoor:hover .top {
+  top: -50%;
+}
+.trapdoor:hover .bottom {
+  top: 100%;
+}
+.trapdoor .top,
+.trapdoor .bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.trapdoor .top:before,
+.trapdoor .bottom:before {
+  position: absolute;
+  content: url(../img/linkedin.png);
+}
+.trapdoor a.follow-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25%;
+  color: #2867b2;
+  text-decoration: none;
+}
+.trapdoor .top {
+  top: 0%;
+}
+.trapdoor .top:before {
+  top: 10px;
+}
+.trapdoor .bottom {
+  top: 50%;
+}
+.trapdoor .bottom:before {
+  top: -15px;
+}
+.trapdoor .door {
+  transition: top 400ms, box-shadow 200ms, transform 300ms;
+  transition-timing-function: ease-in-out;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  z-index: 2;
+}
+.trapdoor .door:before {
+  margin-left: -13px;
+  width: 0;
+  height: 20px;
+  left: 52%;
+}
+
+.social-container .trapdoor.linkedin .top:before,
+.social-container .trapdoor.linkedin .bottom:before {
+  content: url(../img/linkedin.png);
+}
+.social-container .trapdoor.linkedin a.follow-button {
+  color: #2867b2;
+}
+.social-container .trapdoor.github {
+  margin: 0 50px;
+}
+.social-container .trapdoor.github .top:before,
+.social-container .trapdoor.github .bottom:before {
+  content: url(../img/github.png);
+}
+.social-container .trapdoor.github a.follow-button {
+  color: #333;
+}
+
+.trapdoor.mail {
+  margin: 0 100px;
+}
+.trapdoor.mail .top:before,
+.trapdoor.mail .bottom:before {
+  content: url(../img/enveloppe.png);
+}
+.trapdoor.mail a.follow-button {
+  color: green;
 }
 
 /*# sourceMappingURL=style.css.map */

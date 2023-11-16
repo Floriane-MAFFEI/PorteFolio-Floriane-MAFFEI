@@ -1,0 +1,11 @@
+{
+  "name": "portefolio",
+  "version": "1.0.0",
+  "description": "Portefolio d'une developpeuse web passionnée",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/main.scss:./assets/css/style.css"
+  },
+  "author": "Floriane MAFFEI",
+  "license": "ISC"
+}

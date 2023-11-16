@@ -1,9 +1,7 @@
+@charset "UTF-8";
 body,
 html {
   height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica", sans-serif;
 }
 
 @keyframes float {
@@ -360,6 +358,275 @@ body article {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
+}
+
+body h2,
+body h3 {
+  text-align: center;
+}
+body .wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body .wrapper .card {
+  flex: 1;
+  flex-basis: 300px;
+  flex-grow: 0;
+  height: 250px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+}
+body .wrapper .card img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+}
+body .wrapper .card .descriptions {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s ease-in-out;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  clip-path: circle(0% at 100% 100%);
+  color: #ffffff;
+}
+body .wrapper .card:hover .descriptions {
+  left: 0px;
+  transition: all 0.5s ease-in-out;
+  clip-path: circle(75%);
+  margin-top: 1rem;
+}
+body .wrapper .card:hover {
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+body .wrapper .card:hover img {
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  transform: scale(2);
+  filter: blur(1px);
+}
+body .wrapper .card h1 {
+  color: #11027b;
+  letter-spacing: 1px;
+  margin: 0px;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em blue, 0 0 0.2em blue;
+}
+body .wrapper .card p {
+  line-height: 24px;
+  height: 70%;
+}
+body .wrapper .card button {
+  width: fit-content;
+  height: 40px;
+  cursor: pointer;
+  border-style: none;
+  background-color: #110b7f;
+  font-size: 15px;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  bottom: 20%;
+}
+body .wrapper .card button a {
+  color: #ffffff;
+}
+body .wrapper .card button a:hover {
+  transition: all 0.5s ease-in-out;
+  color: yellow;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.center-content ul {
+  list-style: none;
+  padding: 0;
+}
+.center-content ul li {
+  margin: 10px;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tags .hidden {
+  display: none;
+}
+.tags li {
+  max-width: 150px;
+  margin: 2px;
+  padding: 0 0.5em;
+  background-color: #313131;
+  color: #ff0000;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: #222;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+.tags li.html {
+  color: black;
+  background-color: #e96228;
+}
+.tags li.css {
+  color: white;
+  background-color: #2862e9;
+}
+.tags li.js {
+  color: black;
+  background-color: #efd81d;
+}
+.tags li.sass {
+  color: black;
+  background-color: #c76494;
+}
+.tags li.symfony {
+  color: white;
+  background-color: black;
+}
+.tags li.react {
+  color: white;
+  background-color: #5ed3f3;
+}
+.tags li.wordpress {
+  color: black;
+  background-color: #28799e;
+}
+.tags ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header {
+  background: linear-gradient(#767373, #d6d6d6);
+}
+.header i {
+  display: flex;
+  justify-content: flex-end;
+}
+.header span {
+  margin: auto;
+  padding: 0 0.2rem;
+}
+.header span.symbol {
+  margin: 0.2rem 1rem;
+}
+
+section.cube {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  left: 45%;
+}
+section.centered-cube {
+  position: absolute;
+  bottom: 0; /* Ajustez cette valeur selon vos besoins */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cubespinner {
+  margin: 0 100%;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  margin-left: calc(50% - 12.5px); /* Ajustez la marge gauche en conséquence */
+  transform-origin: 12.5px 12.5px 0; /* Ajustez l'origine de la transformation en conséquence */
+  transform-style: preserve-3d;
+}
+.cubespinner img {
+  width: 2rem; /* Ajustez la largeur en conséquence */
+  height: auto;
+}
+.cubespinner img.js {
+  rotate: 270deg;
+}
+.cubespinner img.git, .cubespinner img.gitHub {
+  width: 1rem; /* Ajustez la largeur en conséquence */
+}
+.cubespinner img.symfony {
+  width: 3rem; /* Ajustez la largeur en conséquence */
+}
+.cubespinner div {
+  align-items: center;
+  background: rgba(251, 251, 251, 0.5);
+  border: 1.875px solid #ccc; /* Ajustez l'épaisseur de la bordure en conséquence */
+  box-shadow: 0 0 3.75px 0 #ffffe0; /* Ajustez l'ombre en conséquence */
+  display: flex;
+  font-size: 18.75px; /* Ajustez la taille de la police en conséquence */
+  height: 37.5px; /* Ajustez la hauteur en conséquence */
+  justify-content: center;
+  position: absolute;
+  width: 37.5px; /* Ajustez la largeur en conséquence */
+}
+.cubespinner div.face1 {
+  transform: translateZ(18.75px); /* Ajustez la translation en conséquence */
+}
+.cubespinner div.face2 {
+  transform: rotateY(90deg) translateZ(18.75px);
+}
+.cubespinner div.face3 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(18.75px);
+}
+.cubespinner div.face4 {
+  transform: rotateY(180deg) rotate(90deg) translateZ(18.75px);
+}
+.cubespinner div.face5 {
+  transform: rotateY(-90deg) rotate(90deg) translateZ(18.75px);
+}
+.cubespinner div.face6 {
+  transform: rotateX(-90deg) translateZ(18.75px);
+}
+
+@keyframes spincube {
+  0%, 100% {
+    transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg) rotate(90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateX(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotate(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

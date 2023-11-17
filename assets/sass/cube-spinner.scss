@@ -2,15 +2,14 @@ section {
   &.cube {
     display: flex;
     width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    justify-content: center;
-    left: 45%;
+    position: relative;
+    bottom: 15%;
+    margin: auto;
+    justify-content: space-around;
   }
   &.centered-cube {
     position: absolute;
-    bottom: 0; /* Ajustez cette valeur selon vos besoins */
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -22,41 +21,39 @@ section {
   animation-iteration-count: infinite;
   animation-name: spincube;
   animation-timing-function: ease-in-out;
-  margin-left: calc(50% - 12.5px); /* Ajustez la marge gauche en conséquence */
-  transform-origin: 12.5px 12.5px 0; /* Ajustez l'origine de la transformation en conséquence */
+  margin-left: calc(50% - 12.5px);
+  transform-origin: 12.5px 12.5px 0;
   transform-style: preserve-3d;
 
   img {
-    width: 2rem; /* Ajustez la largeur en conséquence */
+    width: 2rem;
     height: auto;
     &.js {
       rotate: 270deg;
     }
     &.git,
     &.gitHub {
-      width: 1rem; /* Ajustez la largeur en conséquence */
+      width: 1rem;
     }
     &.symfony {
-      width: 3rem; /* Ajustez la largeur en conséquence */
+      width: 3rem;
     }
   }
 
   div {
     align-items: center;
     background: rgba(251, 251, 251, 0.5);
-    border: 1.875px solid #ccc; /* Ajustez l'épaisseur de la bordure en conséquence */
-    box-shadow: 0 0 3.75px 0 #ffffe0; /* Ajustez l'ombre en conséquence */
+    border: 1.875px solid #ccc;
+    box-shadow: 0 0 3.75px 0 #ffffe0;
     display: flex;
-    font-size: 18.75px; /* Ajustez la taille de la police en conséquence */
-    height: 37.5px; /* Ajustez la hauteur en conséquence */
+    font-size: 18.75px;
+    height: 37.5px;
     justify-content: center;
     position: absolute;
-    width: 37.5px; /* Ajustez la largeur en conséquence */
+    width: 37.5px;
 
     &.face1 {
-      transform: translateZ(
-        18.75px
-      ); /* Ajustez la translation en conséquence */
+      transform: translateZ(18.75px);
     }
 
     &.face2 {

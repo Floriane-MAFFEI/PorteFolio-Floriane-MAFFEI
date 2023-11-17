@@ -15,15 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Je sélectionne la fenêtre modale
       var modal = document.getElementById(modalId);
 
-      // Puis je rend la fenêtre modale visible
-      modal.style.visibility = "visible";
-      modal.style.opacity = "1";
-      modal.style.transform = "translateY(110%)";
-      modal.style.zIndex = "1";
-      modal.style.height = "100vh";
-
-      // Enfin je sélectionne l'élément à l'intérieur de la modale sur lequel le focus doit être mis
-      var modalContent = modal.querySelector(".modal_content");
+      // Ajoute la classe "visible" pour afficher la modal au centre
+      modal.classList.add("visible");
 
       // et je met le focus sur l'élément à l'intérieur de la modale
       modalContent.focus();
@@ -43,12 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Je sélectionne la fenêtre modale
       var modal = closeModalBtn.closest(".modal");
 
-      // Puis cache la fenêtre modale
-      modal.style.visibility = "hidden";
-      modal.style.opacity = "0";
-      modal.style.transform = "translateY(0)";
-      modal.style.zIndex = "-1";
-      modal.style.height = "0";
+      // Retire la classe "visible" pour cacher la modal
+      modal.classList.remove("visible");
     });
   });
 });

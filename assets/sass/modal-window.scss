@@ -1,0 +1,52 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  margin: auto;
+}
+
+div.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, 0.5);
+  transition: all 0.4s;
+
+  &:target {
+    visibility: visible;
+    animation-duration: 14s;
+    opacity: 1;
+    transform: translateY(110%);
+    z-index: 1;
+    height: 100vh;
+  }
+}
+
+.modal_content {
+  border-radius: 10px;
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  background: white;
+  padding: 1em 2em;
+}
+
+a.modal_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  color: #131495;
+  margin: 0rem 1rem;
+  padding: 0rem;
+  text-decoration: none;
+  background-color: transparent;
+}

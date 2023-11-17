@@ -645,7 +645,6 @@ div.modal {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(77, 77, 77, 0.5);
   transition: all 0.4s;
 }
 div.modal:target {
@@ -662,7 +661,7 @@ div.modal:target {
   position: relative;
   width: 500px;
   max-width: 90%;
-  background: white;
+  background: #8fc5dc;
   padding: 1em 2em;
 }
 

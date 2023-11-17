@@ -100,6 +100,16 @@ body {
   }
 }
 
+button {
+  position: absolute;
+  left: 15%;
+
+  &.en-savoir-plus-btn {
+    position: absolute;
+    left: 60%;
+  }
+}
+
 .center-content {
   display: flex;
   flex-direction: column;

@@ -450,6 +450,15 @@ body .wrapper .card button a:hover {
   color: yellow;
 }
 
+button {
+  position: absolute;
+  left: 15%;
+}
+button.en-savoir-plus-btn {
+  position: absolute;
+  left: 60%;
+}
+
 .center-content {
   display: flex;
   flex-direction: column;

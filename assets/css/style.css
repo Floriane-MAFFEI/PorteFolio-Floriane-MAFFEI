@@ -274,7 +274,7 @@ body nav ul li a ul li a, body nav ul li:visited ul li a {
 body .nav-mobile {
   display: none;
   position: absolute;
-  top: 0;
+  top: 32px;
   right: 0;
   background: #262626;
   height: 70px;
@@ -550,7 +550,7 @@ section.cube {
   display: flex;
   width: 50px;
   position: relative;
-  bottom: 15%;
+  bottom: 5%;
   margin: auto;
   justify-content: space-around;
 }
@@ -693,6 +693,18 @@ a.modal_close {
   padding: 0rem;
   text-decoration: none;
   background-color: transparent;
+}
+
+ul li {
+  list-style: none;
+}
+
+.a-mon-sujet {
+  margin: 0 0 3rem 0;
+}
+
+section {
+  margin: 2rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

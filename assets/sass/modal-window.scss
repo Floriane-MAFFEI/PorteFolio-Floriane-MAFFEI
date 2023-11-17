@@ -30,7 +30,7 @@ div.modal {
   justify-content: center;
   // transition: all 0.4s;
 
-  &:target {
+  :target {
     visibility: visible;
     animation-duration: 14s;
     opacity: 1;

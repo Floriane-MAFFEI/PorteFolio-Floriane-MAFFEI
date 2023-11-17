@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.classList.add("visible");
 
       // et je met le focus sur l'élément à l'intérieur de la modale
-      modalContent.focus();
+      modal.querySelector(".modal_content").focus();
     });
   });
 

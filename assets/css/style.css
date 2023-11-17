@@ -657,7 +657,7 @@ div.modal {
   align-items: center;
   justify-content: center;
 }
-div.modal:target {
+div.modal :target {
   visibility: visible;
   animation-duration: 14s;
   opacity: 1;

@@ -1,0 +1,54 @@
+.skills {
+  i {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    &.contact {
+      margin-bottom: 0 10rem 1.5rem 13rem;
+    }
+  }
+  div {
+    border-top: thick double black;
+    width: 25%;
+    margin: 5% 37%;
+  }
+}
+
+.list-skills {
+  padding-left: 19%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 0 5rem 0;
+
+  ol,
+  ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+li.list-skills-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  img {
+    padding: 0.5rem 1rem;
+    width: 50px;
+    height: 50px;
+    &.bdd-image-maria,
+    &.bdd-image-mysql {
+      width: 85px;
+    }
+  }
+  &.learn-curious {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 165px;
+  }
+}

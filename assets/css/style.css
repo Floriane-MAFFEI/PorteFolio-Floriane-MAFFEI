@@ -767,6 +767,57 @@ h4 {
     max-width: 90%;
   }
 }
+.skills i {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.skills i.contact {
+  margin-bottom: 0 10rem 1.5rem 13rem;
+}
+.skills div {
+  border-top: thick double black;
+  width: 25%;
+  margin: 5% 37%;
+}
+
+.list-skills {
+  padding-left: 19%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 0 5rem 0;
+}
+.list-skills ol,
+.list-skills ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+li.list-skills-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+li.list-skills-item img {
+  padding: 0.5rem 1rem;
+  width: 50px;
+  height: 50px;
+}
+li.list-skills-item img.bdd-image-maria, li.list-skills-item img.bdd-image-mysql {
+  width: 85px;
+}
+li.list-skills-item.learn-curious {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 165px;
+}
+
 section {
   margin: 2rem 0;
 }

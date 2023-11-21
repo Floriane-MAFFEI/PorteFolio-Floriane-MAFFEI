@@ -1,0 +1,100 @@
+section.testimonials {
+  i {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.testimonials-container {
+  background-color: #0b2887;
+  border-radius: 15px;
+  color: #ffffff;
+  margin: 20px auto;
+  width: 55%;
+  padding: 50px 80px;
+  position: relative;
+
+  .quote {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 28px;
+    position: absolute;
+    top: 70px;
+
+    &-right {
+      left: 40px;
+    }
+
+    &-left {
+      right: 40px;
+      rotate: 180deg;
+    }
+  }
+
+  .testimonial {
+    line-height: 28px;
+    text-align: justify;
+  }
+
+  .centered-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      border-radius: 50%;
+      height: 75px;
+      width: 75px;
+      object-fit: cover;
+    }
+
+    .user-details {
+      margin-left: 10px;
+      text-align: center;
+
+      .username {
+        margin: 0;
+      }
+
+      .role {
+        font-weight: normal;
+        margin: 2px 0;
+      }
+    }
+  }
+
+  .progress-bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 15s linear infinite;
+    transform-origin: left;
+    margin: 0.8rem 0;
+  }
+
+  .arrow.arrow-right {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  @keyframes grow {
+    0% {
+      transform: scaleX(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 30px;
+
+    .quote-right {
+      left: 70%;
+      top: 0;
+    }
+
+    .quote-left {
+      top: 0;
+      left: 97%;
+    }
+  }
+}

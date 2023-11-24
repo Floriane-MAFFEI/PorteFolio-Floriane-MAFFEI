@@ -55,11 +55,16 @@ div.container-info {
   justify-content: center;
 }
 
+@media (max-width: 900px) {
+  div.container-info {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media (max-width: 768px) {
   div.container-info {
+    display: flex;
     flex-direction: column;
-  }
-  .map {
-    margin: 0 -30%;
+    align-items: center;
   }
 }

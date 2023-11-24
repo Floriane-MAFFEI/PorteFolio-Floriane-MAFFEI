@@ -20,7 +20,8 @@ h4 {
 .CV {
   height: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 
   a button {
     cursor: pointer;
@@ -64,6 +65,11 @@ h4 {
   width: 50%;
   justify-content: center;
   margin: 0 5%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 800px) {

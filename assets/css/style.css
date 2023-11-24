@@ -281,9 +281,12 @@ body .nav-mobile {
   height: 70px;
   width: 70px;
 }
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 900px) {
   body .nav-mobile {
     display: block;
+    position: absolute;
+    top: 3rem;
+    right: 5%;
   }
   body nav {
     width: 100%;
@@ -311,7 +314,7 @@ body .nav-mobile {
     margin-top: 5px;
   }
 }
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 900px) {
   body .nav-list {
     display: block !important;
   }
@@ -963,12 +966,17 @@ div.container-info {
   justify-content: center;
 }
 
+@media (max-width: 900px) {
+  div.container-info {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media (max-width: 768px) {
   div.container-info {
+    display: flex;
     flex-direction: column;
-  }
-  .map {
-    margin: 0 -30%;
+    align-items: center;
   }
 }
 section {

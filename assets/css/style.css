@@ -687,6 +687,22 @@ div.modal :target {
   background: #8fc5dc;
   padding: 1em 2em;
 }
+.modal_content .portefolio-info {
+  display: flex;
+  flex-direction: column;
+}
+.modal_content .portefolio-info ul {
+  display: flex;
+  flex-direction: column;
+}
+.modal_content .portefolio-info ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.modal_content .portefolio-info ul li.amelioration {
+  text-align: left;
+}
 
 a.modal_close {
   position: absolute;

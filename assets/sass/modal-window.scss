@@ -46,6 +46,23 @@ div.modal {
   width: 50%;
   background: #8fc5dc;
   padding: 1em 2em;
+  .portefolio-info {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &.amelioration {
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 
 a.modal_close {

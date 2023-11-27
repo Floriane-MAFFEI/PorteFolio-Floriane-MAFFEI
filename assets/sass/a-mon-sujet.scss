@@ -1,6 +1,6 @@
 ul li {
   list-style: none;
-  text-align: center;
+  text-align: left;
 }
 
 h4 {
@@ -20,7 +20,6 @@ h4 {
 .CV {
   height: 5rem;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 
   a button {
@@ -50,13 +49,12 @@ h4 {
 .text {
   margin: 0 5rem;
   width: 50%;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
 
 .flex-group {
   display: flex;
   flex-direction: row-reverse;
+  position: relative;
 }
 
 .flex {
@@ -82,5 +80,43 @@ h4 {
     width: 100%;
     margin: 0 5%;
     max-width: 90%;
+  }
+  .flex ul {
+    margin: 0 25%;
+  }
+  .CV {
+    margin: 2% 25%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .flex-group {
+    flex-direction: column;
+    margin: 0 0% 0 10%;
+  }
+
+  .flex,
+  .text {
+    margin: 0 1%;
+  }
+  .flex ul {
+    margin: 0 -10%;
+  }
+  .CV {
+    margin: 5% 0;
+    justify-content: center;
+    position: relative;
+    left: -10%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .flex-group {
+    flex-direction: column;
+    margin: 0 0% 0 5%;
+  }
+  .flex ul {
+    margin: 0 0 0 -13%;
   }
 }

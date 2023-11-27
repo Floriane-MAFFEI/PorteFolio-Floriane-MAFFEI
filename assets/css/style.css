@@ -1061,6 +1061,28 @@ div.container-info {
     align-items: center;
   }
 }
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.carousel-item img {
+  height: 250px;
+}
+
+.active {
+  transform: translateX(0);
+}
+
 section {
   margin: 3rem 0;
 }

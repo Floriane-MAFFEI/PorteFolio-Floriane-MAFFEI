@@ -831,6 +831,8 @@ h4 {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  text-align: center;
+  width: 100vw;
 }
 .skills i.contact {
   margin-bottom: 0 10rem 1.5rem 13rem;
@@ -842,7 +844,7 @@ h4 {
 }
 
 .list-skills {
-  padding-left: 19%;
+  padding-left: 15%;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -850,7 +852,11 @@ h4 {
   width: 70%;
   align-items: center;
   justify-content: space-around;
-  margin: 0 0 5rem 0;
+}
+.list-skills.domain {
+  padding-left: 4%;
+  display: block;
+  width: 80%;
 }
 .list-skills ol,
 .list-skills ul {
@@ -858,10 +864,18 @@ h4 {
   margin-bottom: 1rem;
 }
 
+ul.list-skills.domain {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 li.list-skills-item {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  align-items: center;
 }
 li.list-skills-item img {
   padding: 0.5rem 1rem;
@@ -878,6 +892,19 @@ li.list-skills-item.learn-curious {
   width: 165px;
 }
 
+@media screen and (max-width: 800px) {
+  .list-skills.domain {
+    width: 100%;
+    margin: 0 3%;
+    max-width: 90%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .list-skills.domain {
+    margin: 0 1%;
+  }
+}
 section.testimonials i {
   display: flex;
   justify-content: center;

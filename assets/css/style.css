@@ -528,6 +528,10 @@ button.en-savoir-plus-btn {
   color: black;
   background-color: #28799e;
 }
+.tags li.bootstrap {
+  color: white;
+  background-color: #6e2cf3;
+}
 .tags ul {
   display: flex;
   flex-direction: row;

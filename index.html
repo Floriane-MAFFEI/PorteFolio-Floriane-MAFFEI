@@ -552,48 +552,91 @@
   
         <div
           class="card change-image"
-          data-image-normal="./assets/img/WIP.png"
-          data-image-hover="./assets/img/WIP-hover.png"
+          data-image-normal="./assets/img/portefolio/Showflix.png"
+          data-image-hover="./assets/img/portefolio/Showflix-hover.png"
         >
           <div class="header">
             <i>
-              <span>Titre du site</span>
+              <span>ShowFlix</span>
               <span class="symbol"> &#8210; </span>
                 <span class="symbol"> &#x25A1; </span>
                 <span class="symbol"> &#120; </span>
             </i>
           </div>
-          <img src="./assets/img/WIP.png" />
+          <img src="./assets/img/portefolio/Showflix.png" />
           <div class="descriptions center-content">
-            <h1>Titre du site</h1>
+            <h1>ShowFlix</h1>
             <div class="tags">
               <div>
                 <ul>
-                  <li class="html">HTML5</li>
+                  <li class="hidden html">HTML5</li>
                   <li class="css">CSS 3</li>
-                  <li class="js">JS</li>
-                  <li class="sass">SASS</li>
-                  <li class="hidden symfony">SYMFONY</li>
+                  <li class="hidden js">JS</li>
+                  <li class="hidden sass">SASS</li>
+                  <li class="symfony">SYMFONY</li>
                   <li class="hidden react">REACT</li>
                   <li class="hidden wordpress">WORDPRESS</li>
+                  <li class="bootstrap">BOOTSTRAP</li>
                 </ul>
               </div>
             </div>
             <button class="en-savoir-plus-btn">
               <a href="#test2">En savoir +</a>
             </button>
-            <button>
+            <!-- <button>
               <a href="./index.html">Visitez le site</a>
-            </button>
+            </button> -->
           </div>
           
         </div>
 
         <div id="test2" class="modal" tabindex="1">
           <div class="modal_content">
-            <h1>Hello</h1>
-    
-            <p>Bienvenue sur la fenêtre modale 2!</p>
+            <h1>Showflix</h1>
+            <div id="carousel-wrapper">
+              <div id="myCarousel-ShowFlix" class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/portefolio/Showflix.png" alt="Image 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/portefolio/Showflix-hover.png" alt="Image 1">
+                  </div>
+                </div>
+                <div class="btn-carousel">
+                <a class="carousel-control-prev" href="#" role="button" onclick="changeSlide(-1)">
+                  Précédent
+                </a>
+                <a class="carousel-control-next" href="#" role="button" onclick="changeSlide(1)">
+                  Suivant
+                </a>
+              </div>
+              </div>
+            </div>
+            <div class="portefolio-info">
+              <h3>Information sur le projet</h3>
+              <ul>
+                  <li><strong>Type de projet</strong>: ShowFlix</li>
+                  <li><strong>Date du Projet</strong>: mars 2023</li>
+                  <li><strong>URL du Projet</strong>: <a href="https://github.com/Floriane-MAFFEI/ShowFlix">https://github.com/Floriane-MAFFEI/ShowFlix</a></li>
+                  <li><strong>Languages utilisés</strong>: Symfony, SQL, Bootstrap, CSS</li>
+                  <li><strong>Status</strong>: En cours</li>
+                  <li><strong>Version du projet</strong>: 1 </li>
+                  <li><strong>Amélioration à venir</strong>:
+                  </li><li class="amelioration">Newsletter</li>
+                  <li class="amelioration">Mise en place de la pagination</li>
+                  <li class="amelioration">Mise en place de la recherche par genre</li>
+                  <li class="amelioration">Mise en place du profil user
+                  </li>
+                  <li class="amelioration">Utilisation des slugs
+                  </li>
+                  <li class="amelioration">Traduction des synopsis via un bouton FR/EN</li>
+                  <li class="amelioration">Liste des genres
+                  </li>
+                  <li class="amelioration">Responsive à améliorer
+                  </li>
+              </ul>
+          </div>
     
             <a href="./index.html#portefolio" class="modal_close">&times;</a>
           </div>

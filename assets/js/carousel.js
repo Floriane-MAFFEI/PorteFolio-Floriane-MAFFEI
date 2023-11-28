@@ -1,39 +1,49 @@
-// Récupérez le carousel et les éléments associés
-const carousel = document.getElementById("myCarousel");
-const items = carousel.querySelectorAll(".carousel-item");
+// Fonction générique pour initialiser un carrousel
+function setupCarousel(carouselId) {
+  const carousel = document.getElementById(carouselId);
+  const items = carousel.querySelectorAll(".carousel-item");
+  let currentSlide = 0;
 
-let currentSlide = 0;
+  function changeSlide(direction) {
+    currentSlide += direction;
 
-// Fonction pour changer de diapositive
-function changeSlide(direction) {
-  currentSlide += direction;
+    if (currentSlide < 0) {
+      currentSlide = items.length - 1;
+    } else if (currentSlide >= items.length) {
+      currentSlide = 0;
+    }
 
-  // Vérifiez les limites des diapositives
-  if (currentSlide < 0) {
-    currentSlide = items.length - 1;
-  } else if (currentSlide >= items.length) {
-    currentSlide = 0;
+    displaySlide();
   }
 
-  // Affichez la diapositive actuelle
+  function displaySlide() {
+    items.forEach((item, index) => {
+      if (index === currentSlide) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+
+    const transformValue = -currentSlide * 100 + "%";
+    carousel.querySelector(".carousel-inner").style.transform =
+      "translateX(" + transformValue + ")";
+  }
+
+  // Ajoutez les gestionnaires d'événements pour les boutons de contrôle
+  const prevButton = carousel.querySelector(".carousel-control-prev");
+  const nextButton = carousel.querySelector(".carousel-control-next");
+
+  prevButton.addEventListener("click", () => changeSlide(-1));
+  nextButton.addEventListener("click", () => changeSlide(1));
+
   displaySlide();
+
+  return {
+    changeSlide,
+  };
 }
 
-// Fonction pour afficher la diapositive actuelle
-function displaySlide() {
-  items.forEach((item, index) => {
-    if (index === currentSlide) {
-      item.classList.add("active");
-    } else {
-      item.classList.remove("active");
-    }
-  });
-
-  // Déplacez le carousel pour afficher la diapositive actuelle
-  const transformValue = -currentSlide * 100 + "%";
-  carousel.querySelector(".carousel-inner").style.transform =
-    "translateX(" + transformValue + ")";
-}
-
-// Affichez la première diapositive au chargement
-displaySlide();
+// Initialisez les carrousels
+const adopteUnArbreCarousel = setupCarousel("myCarousel");
+const showFlixCarousel = setupCarousel("myCarousel-ShowFlix");

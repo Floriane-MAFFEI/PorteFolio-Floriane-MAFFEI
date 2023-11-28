@@ -742,17 +742,6 @@ a.modal_close {
     margin: 0;
   }
 }
-@media screen and (min-width: 1024px) {
-  .modal_content {
-    width: 50%;
-    height: 75vh;
-    margin-bottom: 1rem;
-  }
-  .modal_content .portefolio-info {
-    position: absolute;
-    top: 40%;
-  }
-}
 ul li {
   list-style: none;
   text-align: left;

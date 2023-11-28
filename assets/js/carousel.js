@@ -34,8 +34,17 @@ function setupCarousel(carouselId) {
   const prevButton = carousel.querySelector(".carousel-control-prev");
   const nextButton = carousel.querySelector(".carousel-control-next");
 
-  prevButton.addEventListener("click", () => changeSlide(-1));
-  nextButton.addEventListener("click", () => changeSlide(1));
+  prevButton.addEventListener("click", function (event) {
+    // Empêcher le comportement par défaut du lien
+    event.preventDefault();
+    changeSlide(-1);
+  });
+
+  nextButton.addEventListener("click", function (event) {
+    // Empêcher le comportement par défaut du lien
+    event.preventDefault();
+    changeSlide(1);
+  });
 
   displaySlide();
 
@@ -47,3 +56,29 @@ function setupCarousel(carouselId) {
 // Initialisez les carrousels
 const adopteUnArbreCarousel = setupCarousel("myCarousel");
 const showFlixCarousel = setupCarousel("myCarousel-ShowFlix");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const closeModalButtons = document.querySelectorAll(".modal_close");
+
+  closeModalButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      // Empêcher le comportement par défaut du lien
+      event.preventDefault();
+
+      // Fermer la modal
+      const modal = button.closest(".modal");
+      modal.style.display = "none";
+
+      // Réinitialiser la modal
+      resetModal(modal);
+
+      // Retourner à l'ancre "portefolio"
+      window.location.href = "./index.html#portefolio";
+    });
+  });
+
+  // Réinitialise la modal en la rendant à nouveau visible
+  function resetModal(modal) {
+    modal.style.display = "block";
+  }
+});

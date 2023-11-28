@@ -100,7 +100,19 @@ a.modal_close {
     height: 100%;
     margin-bottom: 1rem;
     .portefolio-info {
-      margin: -4rem 0 0 0;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal_content {
+    width: 50%;
+    height: 75vh;
+    margin-bottom: 1rem;
+    .portefolio-info {
+      position: absolute;
+      top: 40%;
     }
   }
 }

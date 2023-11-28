@@ -3,6 +3,11 @@
   overflow: hidden;
 }
 
+div {
+  &#carousel-wrapper {
+    height: 50%;
+  }
+}
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -12,10 +17,27 @@
   min-width: 100%;
   box-sizing: border-box;
   img {
-    height: 250px;
+    height: 300px;
+    width: 100%;
   }
 }
 
 .active {
   transform: translateX(0);
+}
+
+a.carousel-control-next,
+a.carousel-control-prev {
+  background-color: #06283d;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.btn-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

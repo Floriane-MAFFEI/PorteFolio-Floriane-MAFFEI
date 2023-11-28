@@ -645,7 +645,7 @@ section.centered-cube {
 }
 
 h1 {
-  margin: auto;
+  margin: 0 0 2% 0;
 }
 
 .modal.visible {
@@ -653,6 +653,7 @@ h1 {
   opacity: 1;
   width: 100%;
   z-index: 1;
+  height: 120%;
 }
 
 div.modal {
@@ -670,6 +671,7 @@ div.modal {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-height: 100vh;
 }
 div.modal :target {
   visibility: visible;
@@ -684,12 +686,17 @@ div.modal :target {
   border-radius: 10px;
   position: relative;
   width: 50%;
+  height: 100vh;
   background: #8fc5dc;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
   padding: 1em 2em;
 }
 .modal_content .portefolio-info {
   display: flex;
   flex-direction: column;
+  margin: 3rem 0 0 0;
 }
 .modal_content .portefolio-info ul {
   display: flex;
@@ -716,6 +723,25 @@ a.modal_close {
   background-color: transparent;
 }
 
+@media screen and (max-width: 801px) {
+  .modal_content {
+    width: 70%;
+    height: 75%;
+  }
+  .modal_content .portefolio-info {
+    margin: -2rem 0 0 0;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 799px) {
+  .modal_content {
+    width: 95%;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+  .modal_content .portefolio-info {
+    margin: -4rem 0 0 0;
+  }
+}
 ul li {
   list-style: none;
   text-align: left;
@@ -1066,6 +1092,10 @@ div.container-info {
   overflow: hidden;
 }
 
+div#carousel-wrapper {
+  height: 50%;
+}
+
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -1076,11 +1106,28 @@ div.container-info {
   box-sizing: border-box;
 }
 .carousel-item img {
-  height: 250px;
+  height: 300px;
+  width: 100%;
 }
 
 .active {
   transform: translateX(0);
+}
+
+a.carousel-control-next,
+a.carousel-control-prev {
+  background-color: #06283d;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.btn-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section {

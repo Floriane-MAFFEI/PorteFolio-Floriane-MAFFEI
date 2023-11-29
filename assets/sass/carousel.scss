@@ -28,12 +28,16 @@ div {
 
 a.carousel-control-next,
 a.carousel-control-prev {
-  background-color: #06283d;
+  background-color: $primary-color;
   padding: 0.5rem;
-  color: white;
+  color: $quaternary-color;
   text-decoration: none;
   margin: 1rem;
   border-radius: 10px;
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    color: $tertiary-color;
+  }
 }
 
 .btn-carousel {

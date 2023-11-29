@@ -20,7 +20,7 @@ function AjoutDeLettre() {
     ) {
       text.innerHTML = text.innerHTML.replace(/une\sdéveloppeuse/, "");
       text.innerHTML +=
-        ' <span style="text-decoration: underline solid red;">' +
+        ' <span style="font-weight: bold">' +
         splitText[i - 2] +
         " " +
         splitText[i - 1] +

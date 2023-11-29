@@ -22,7 +22,7 @@ body {
       }
       &,
       &:visited {
-        color: #ffffff;
+        color: $quaternary-color;
         text-decoration: none;
       }
     }
@@ -48,12 +48,12 @@ body {
           padding: 0 15px;
           line-height: 70px;
           background: #262626;
-          color: #ffffff;
+          color: $quaternary-color;
           text-decoration: none;
           &:hover,
           &:visited:hover {
-            background: rgb(42, 78, 206);
-            color: #ffffff;
+            background: lighten($secondary-color, 30%);
+            color: $primary-color;
           }
           &:not(:only-child):after,
           &:visited:not(:only-child):after {
@@ -134,7 +134,7 @@ body {
       border-radius: 1px;
       height: 5px;
       width: 35px;
-      background: #4557f9;
+      background: $tertiary-color;
       position: absolute;
       display: block;
       content: "";

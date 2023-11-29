@@ -360,7 +360,10 @@ body article {
 }
 
 body h2,
-body h3 {
+body h3,
+body h4,
+body h5,
+body h6 {
   text-align: center;
 }
 body .wrapper {
@@ -418,7 +421,7 @@ body .wrapper .card:hover img {
   transform: scale(2);
   filter: blur(1px);
 }
-body .wrapper .card h1 {
+body .wrapper .card h3 {
   color: #06283d;
   letter-spacing: 1px;
   margin: 0px;
@@ -1152,7 +1155,18 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  margin: 1rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin: 4rem 0 1rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  margin: 4rem 0 1rem;
 }
 
 p {

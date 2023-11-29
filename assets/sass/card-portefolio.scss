@@ -64,9 +64,10 @@ body {
       }
 
       h1 {
-        color: #11027b;
+        color: $primary-color;
         letter-spacing: 1px;
         margin: 0px;
+        font-size: 1.5rem;
         text-shadow: 1px 1px 2px #fff, 0 0 1em blue, 0 0 0.2em blue;
       }
 
@@ -80,7 +81,7 @@ body {
         height: 40px;
         cursor: pointer;
         border-style: none;
-        background-color: #110b7f;
+        background-color: $primary-color;
         font-size: 15px;
         outline: none;
         border-radius: 5px;
@@ -89,10 +90,10 @@ body {
         position: absolute;
         bottom: 20%;
         a {
-          color: #ffffff;
+          color: $quaternary-color;
           &:hover {
             transition: all 0.5s ease-in-out;
-            color: yellow;
+            color: $tertiary-color;
           }
         }
       }
@@ -140,7 +141,6 @@ button {
     margin: 2px;
     padding: 0 0.5em;
     background-color: #313131;
-    color: #ff0000;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: #222;

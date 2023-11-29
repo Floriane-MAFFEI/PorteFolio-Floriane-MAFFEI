@@ -6,7 +6,7 @@ ul li {
 h4 {
   text-align: center;
   padding: 1rem;
-  text-decoration: rgb(128, 0, 0) wavy underline;
+  text-decoration: $quaternary-color wavy underline;
 }
 
 .a-mon-sujet {
@@ -26,16 +26,16 @@ h4 {
     cursor: pointer;
     position: relative;
     margin: auto;
-    background-color: darkblue;
-    color: white;
+    background-color: $primary-color;
+    color: $quaternary-color;
     padding: 1rem;
     border-radius: 10px;
     &:hover {
       background: linear-gradient(
         135deg,
-        rgb(74 158 255) 0%,
-        rgb(58 116 221) 11%,
-        rgb(38 78 181) 24%
+        lighten($primary-color, 20%) 0%,
+        lighten($primary-color, 30%) 11%,
+        lighten($primary-color, 10%) 24%
       );
       transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
       font-weight: bold;

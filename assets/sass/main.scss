@@ -11,6 +11,35 @@
 @import "contact";
 @import "carousel";
 
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: lighten($secondary-color, 40%);
+  color: rgb(54, 54, 54);
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
 section {
   margin: 3rem 0;
+  &.colored {
+    background-color: lighten($secondary-color, 30%);
+    padding: 3rem 0;
+  }
 }

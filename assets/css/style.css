@@ -57,13 +57,12 @@ html {
   text-align: center;
 }
 .presentation .content-presentation h1 {
-  font-size: 24px;
   margin: 10px 0 0 0;
   font-weight: bold;
   color: #000000;
 }
 .presentation .content-presentation p {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: lighter;
   color: #242424;
 }
@@ -209,9 +208,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-}
-body * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body .nav-bar {
   height: 70px;
@@ -423,9 +419,10 @@ body .wrapper .card:hover img {
   filter: blur(1px);
 }
 body .wrapper .card h1 {
-  color: #11027b;
+  color: #06283d;
   letter-spacing: 1px;
   margin: 0px;
+  font-size: 1.5rem;
   text-shadow: 1px 1px 2px #fff, 0 0 1em blue, 0 0 0.2em blue;
 }
 body .wrapper .card p {
@@ -437,7 +434,7 @@ body .wrapper .card button {
   height: 40px;
   cursor: pointer;
   border-style: none;
-  background-color: #110b7f;
+  background-color: #06283d;
   font-size: 15px;
   outline: none;
   border-radius: 5px;
@@ -447,11 +444,11 @@ body .wrapper .card button {
   bottom: 20%;
 }
 body .wrapper .card button a {
-  color: #ffffff;
+  color: #dff6ff;
 }
 body .wrapper .card button a:hover {
   transition: all 0.5s ease-in-out;
-  color: yellow;
+  color: #47b5ff;
 }
 
 button {
@@ -490,7 +487,6 @@ button.en-savoir-plus-btn {
   margin: 2px;
   padding: 0 0.5em;
   background-color: #313131;
-  color: #ff0000;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: #222;
@@ -644,10 +640,6 @@ section.centered-cube {
     transform: rotateX(90deg);
   }
 }
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 h1 {
   margin: 0 0 2% 0;
 }
@@ -754,7 +746,7 @@ ul li {
 h4 {
   text-align: center;
   padding: 1rem;
-  text-decoration: rgb(128, 0, 0) wavy underline;
+  text-decoration: #dff6ff wavy underline;
 }
 
 .a-mon-sujet {
@@ -773,13 +765,13 @@ h4 {
   cursor: pointer;
   position: relative;
   margin: auto;
-  background-color: darkblue;
-  color: white;
+  background-color: #06283d;
+  color: #dff6ff;
   padding: 1rem;
   border-radius: 10px;
 }
 .CV a button:hover {
-  background: linear-gradient(135deg, rgb(74, 158, 255) 0%, rgb(58, 116, 221) 11%, rgb(38, 78, 181) 24%);
+  background: linear-gradient(135deg, #0f659a 0%, #1483c8 11%, #0b466b 24%);
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   font-weight: bold;
 }
@@ -942,7 +934,7 @@ section.testimonials i {
 }
 
 .testimonials-container {
-  background-color: #0b2887;
+  background-color: #06283d;
   border-radius: 15px;
   color: #ffffff;
   margin: 20px auto;
@@ -1134,8 +1126,38 @@ a.carousel-control-prev {
   justify-content: center;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #95cee1;
+  color: rgb(54, 54, 54);
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 section {
   margin: 3rem 0;
+}
+section.colored {
+  background-color: #6dbcd6;
+  padding: 3rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

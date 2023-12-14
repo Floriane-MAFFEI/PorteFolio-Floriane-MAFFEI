@@ -758,6 +758,11 @@ h4 {
 }
 .a-mon-sujet a {
   margin: 0 0.5rem;
+  color: #06283d;
+}
+.a-mon-sujet a:hover {
+  color: #dff6ff;
+  transition: color 1.5s cubic-bezier(0.05, 0.83, 0.61, 1.39);
 }
 
 .CV {
@@ -1062,6 +1067,11 @@ section.contact i {
 }
 .email p {
   margin: 0;
+  color: #06283d;
+}
+.email p:hover {
+  color: #dff6ff;
+  transition: color 1.5s cubic-bezier(0.05, 0.83, 0.61, 1.39);
 }
 
 .map {

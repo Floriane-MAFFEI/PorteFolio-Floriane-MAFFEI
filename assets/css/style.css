@@ -136,7 +136,7 @@ html {
 .trapdoor .top:before,
 .trapdoor .bottom:before {
   position: absolute;
-  content: url(../img/linkedin.png);
+  content: url(../img/linkedin.webp);
 }
 .trapdoor a.follow-button {
   position: absolute;
@@ -178,7 +178,7 @@ html {
 
 .social-container .trapdoor.linkedin .top:before,
 .social-container .trapdoor.linkedin .bottom:before {
-  content: url(../img/linkedin.png);
+  content: url(../img/linkedin.webp);
 }
 .social-container .trapdoor.linkedin a.follow-button {
   color: #2867b2;
@@ -188,7 +188,7 @@ html {
 }
 .social-container .trapdoor.github .top:before,
 .social-container .trapdoor.github .bottom:before {
-  content: url(../img/github.png);
+  content: url(../img/github.webp);
 }
 .social-container .trapdoor.github a.follow-button {
   color: #333;
@@ -199,7 +199,7 @@ html {
 }
 .trapdoor.mail .top:before,
 .trapdoor.mail .bottom:before {
-  content: url(../img/enveloppe.png);
+  content: url(../img/enveloppe.webp);
 }
 .trapdoor.mail a.follow-button {
   color: green;

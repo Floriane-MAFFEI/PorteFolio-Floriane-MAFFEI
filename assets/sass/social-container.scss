@@ -41,7 +41,7 @@
 
     &:before {
       position: absolute;
-      content: url(../img/linkedin.png);
+      content: url(../img/linkedin.webp);
     }
   }
 
@@ -95,7 +95,7 @@
     .top,
     .bottom {
       &:before {
-        content: url(../img/linkedin.png);
+        content: url(../img/linkedin.webp);
       }
     }
 
@@ -109,7 +109,7 @@
     .top,
     .bottom {
       &:before {
-        content: url(../img/github.png);
+        content: url(../img/github.webp);
       }
     }
 
@@ -124,7 +124,7 @@
   .top,
   .bottom {
     &:before {
-      content: url(../img/enveloppe.png);
+      content: url(../img/enveloppe.webp);
     }
   }
 

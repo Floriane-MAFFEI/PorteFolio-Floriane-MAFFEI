@@ -19,10 +19,7 @@ div {
   img {
     height: 300px;
     width: 100%;
-    transition: transform 0.5s ease-in-out;
-    :hover {
-      transform: scale(2);
-    }
+    object-fit: contain;
   }
 }
 

@@ -1118,10 +1118,7 @@ div#carousel-wrapper {
 .carousel-item img {
   height: 300px;
   width: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-.carousel-item img :hover {
-  transform: scale(2);
+  object-fit: contain;
 }
 
 .active {

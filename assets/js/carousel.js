@@ -56,6 +56,8 @@ function setupCarousel(carouselId) {
 // Initialisez les carrousels
 const adopteUnArbreCarousel = setupCarousel("myCarousel");
 const showFlixCarousel = setupCarousel("myCarousel-ShowFlix");
+const myMediaCollectionCarousel = setupCarousel("myCarousel-MyMediaCollection");
+const brosseAdamCarousel = setupCarousel("myCarousel-BrosseAdam");
 
 document.addEventListener("DOMContentLoaded", function () {
   const closeModalButtons = document.querySelectorAll(".modal_close");

@@ -53,11 +53,15 @@ function setupCarousel(carouselId) {
   };
 }
 
-// Initialisez les carrousels
-const adopteUnArbreCarousel = setupCarousel("myCarousel");
-const showFlixCarousel = setupCarousel("myCarousel-ShowFlix");
-const myMediaCollectionCarousel = setupCarousel("myCarousel-MyMediaCollection");
-const brosseAdamCarousel = setupCarousel("myCarousel-BrosseAdam");
+const carouselIds = [
+  "myCarousel",
+  "myCarousel-ShowFlix",
+  "myCarousel-MyMediaCollection",
+  "myCarousel-BrosseAdam",
+  "myCarousel-Maffei-WebWorld",
+];
+
+carouselIds.forEach((id) => setupCarousel(id));
 
 document.addEventListener("DOMContentLoaded", function () {
   const closeModalButtons = document.querySelectorAll(".modal_close");

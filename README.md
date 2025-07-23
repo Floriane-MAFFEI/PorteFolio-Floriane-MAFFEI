@@ -1,3 +1,3 @@
 # PorteFolio de Floriane MAFFEI
 
-_En Cours De Développement_
+Ancienne version de mon portefolio, aujourd'hui une version 2 est disponible à cette adresse : https://floriane-maffei.vercel.app/
